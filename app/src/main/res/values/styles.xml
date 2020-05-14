@@ -1,0 +1,73 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="CapivaraTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:windowFullscreen">true</item>
+        <item name="windowNoTitle">true</item>
+
+
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="fontFamily">@font/curse</item>
+
+
+    </style>
+
+    <style name="CapivaraTheme.BaseView" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="CapivaraTheme.ScreenTitle" parent="CapivaraTheme.BaseView">
+        <item name="android:textSize">28sp</item>
+        <item name="android:textColor">@color/colorTitle</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="fontFamily">@font/cloudy</item>
+    </style>
+
+    <style name="CapivaraTheme.TextViewLink" parent="CapivaraTheme.BaseView">
+        <item name="android:textColor">@color/colorActivated</item>
+        <item name="android:background">@drawable/custom_textview</item>
+        <item name="android:backgroundTint">@color/colorActivated</item>
+    </style>
+
+
+    <style name="CapivaraTheme.ButtonNormal" parent="CapivaraTheme.BaseView">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:background">@drawable/button_normal</item>
+        <item name="android:textColor">@color/colorBrown</item>
+    </style>
+
+    <style name="CapivaraTheme.ButtonBackNext" parent="CapivaraTheme.ButtonNormal">
+        <item name="android:layout_width">60dp</item>
+        <item name="android:layout_height">50dp</item>
+    </style>
+
+    <style name="CapivaraTheme.ButtonCapiiColor" parent="CapivaraTheme.ButtonNormal">
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">40dp</item>
+    </style>
+
+    <style name="CapivaraTheme.EditTextNormal" parent="CapivaraTheme.BaseView">
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textColorHint">@color/colorWhite</item>
+        <item name="android:backgroundTint">@color/colorWhite</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginLeft">32dp</item>
+        <item name="android:layout_marginRight">32dp</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="CapivaraTheme.CheckboxNormal" parent="CapivaraTheme.BaseView">
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:buttonTint">@color/colorWhite</item>
+        <item name="android:layout_marginLeft">32dp</item>
+    </style>
+
+</resources>

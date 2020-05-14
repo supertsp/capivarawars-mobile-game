@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_main"
+    tools:context=".ActivityRegistrationPass02">
+
+    <ImageView
+        android:id="@+id/iv_screen_title"
+        style="@style/CapivaraTheme.BaseView"
+
+        android:layout_marginTop="16dp"
+        android:src="@drawable/screen_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_signin"
+        style="@style/CapivaraTheme.ScreenTitle"
+        android:layout_marginTop="28dp"
+        android:text="Registration"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/iv_screen_title" />
+
+    <EditText
+        android:id="@+id/et_birthday"
+        style="@style/CapivaraTheme.EditTextNormal"
+        android:layout_marginTop="32dp"
+        android:hint="Birthday"
+        android:inputType="date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_screen_title" />
+
+    <TextView
+        android:id="@+id/tv_birthday"
+        style="@style/CapivaraTheme.BaseView"
+        android:text="*yyyy-mm-dd"
+        app:layout_constraintEnd_toEndOf="@+id/et_birthday"
+        app:layout_constraintHorizontal_bias="0.96"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_birthday" />
+
+    <CheckBox
+        android:id="@+id/cb_of_age"
+        style="@style/CapivaraTheme.CheckboxNormal"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+
+        android:text="I'm of age"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_birthday" />
+
+    <CheckBox
+        android:id="@+id/cb_under_age"
+        style="@style/CapivaraTheme.CheckboxNormal"
+        android:layout_marginTop="16dp"
+        android:text="I'm under age"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cb_of_age" />
+
+    <TextView
+        android:id="@+id/tv_general_terms"
+        style="@style/CapivaraTheme.TextViewLink"
+        android:layout_marginTop="40dp"
+        android:text="General Terms"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cb_under_age" />
+
+    <CheckBox
+        android:id="@+id/cb_agree_general_terms"
+        style="@style/CapivaraTheme.CheckboxNormal"
+        android:layout_marginTop="16dp"
+        android:text="I agree with General terms"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_general_terms" />
+
+    <Button
+        android:id="@+id/bt_back"
+        style="@style/CapivaraTheme.ButtonBackNext"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:onClick="onClick_backToPass01"
+        android:background="@drawable/button_back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/bt_next"
+        style="@style/CapivaraTheme.ButtonBackNext"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:onClick="onClick_nextToPass03"
+        android:background="@drawable/button_next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

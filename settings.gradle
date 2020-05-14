@@ -1,0 +1,2 @@
+rootProject.name='Capivara Wars'
+include ':app'
