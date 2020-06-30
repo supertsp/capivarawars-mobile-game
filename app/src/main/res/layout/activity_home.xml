@@ -7,16 +7,252 @@
     android:background="@drawable/bg_main"
     tools:context=".ActivityHome">
 
-    <TextView
-        android:id="@+id/textView"
+    <ImageView
+        android:id="@+id/iv_capybara_icon"
         style="@style/CapivaraTheme.BaseView"
-        android:background="@drawable/custom_textview"
-        android:text="Home"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/capii_player_brown"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.41"
+        app:layout_constraintHorizontal_bias="0.44"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.1" />
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_user_icon"
+        style="@style/CapivaraTheme.BaseView"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:src="@drawable/user_female_icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/iv_capybara_icon"
+        app:layout_constraintTop_toTopOf="@+id/iv_capybara_icon" />
+
+    <TextView
+        android:id="@+id/tv_nick"
+        style="@style/CapivaraTheme.BaseView"
+        android:text="superplayer78"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/iv_capybara_icon"
+        app:layout_constraintTop_toBottomOf="@+id/iv_user_icon" />
+
+    <TextView
+        android:id="@+id/tv_player_score"
+        style="@style/CapivaraTheme.BaseView"
+        android:layout_marginTop="16dp"
+        android:text="1000"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toStartOf="@+id/iv_capybara_icon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/iv_capybara_icon" />
+
+
+    <TextView
+        android:id="@+id/tv_player_score_label"
+        style="@style/CapivaraTheme.BaseView"
+        android:text="score"
+        app:layout_constraintEnd_toEndOf="@+id/tv_player_score"
+        app:layout_constraintTop_toBottomOf="@+id/tv_player_score" />
+
+    <LinearLayout
+        android:id="@+id/tr_capii_life"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_capybara_icon">
+
+        <ImageView
+            android:id="@+id/iv_life_square_01"
+            style="@style/CapivaraTheme.BaseView"
+            android:src="@drawable/life_square_fill"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/iv_capybara_icon"
+            app:layout_constraintTop_toTopOf="@+id/iv_capybara_icon" />
+
+        <ImageView
+            android:id="@+id/iv_life_square_02"
+            style="@style/CapivaraTheme.BaseView"
+            android:src="@drawable/life_square_fill"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/iv_capybara_icon"
+            app:layout_constraintTop_toTopOf="@+id/iv_capybara_icon" />
+
+        <ImageView
+            android:id="@+id/iv_life_square_03"
+            style="@style/CapivaraTheme.BaseView"
+            android:src="@drawable/life_square_empty"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/iv_capybara_icon"
+            app:layout_constraintTop_toTopOf="@+id/iv_capybara_icon" />
+
+        <ImageView
+            android:id="@+id/iv_life_square_04"
+            style="@style/CapivaraTheme.BaseView"
+            android:src="@drawable/life_square_empty"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/iv_capybara_icon"
+            app:layout_constraintTop_toTopOf="@+id/iv_capybara_icon" />
+
+        <ImageView
+            android:id="@+id/iv_life_square_05"
+            style="@style/CapivaraTheme.BaseView"
+            android:src="@drawable/life_square_empty"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/iv_capybara_icon"
+            app:layout_constraintTop_toTopOf="@+id/iv_capybara_icon" />
+
+        <ImageView
+            android:id="@+id/iv_life_square_06"
+            style="@style/CapivaraTheme.BaseView"
+            android:src="@drawable/life_square_empty"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/iv_capybara_icon"
+            app:layout_constraintTop_toTopOf="@+id/iv_capybara_icon" />
+
+        <ImageView
+            android:id="@+id/iv_life_square_07"
+            style="@style/CapivaraTheme.BaseView"
+            android:src="@drawable/life_square_empty"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/iv_capybara_icon"
+            app:layout_constraintTop_toTopOf="@+id/iv_capybara_icon" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_capybara_name"
+        style="@style/CapivaraTheme.BaseView"
+        android:text="Belinha"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tr_capii_life" />
+
+    <TextView
+        android:id="@+id/tv_capybara_age"
+        style="@style/CapivaraTheme.BaseView"
+        android:text="3 months old"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_capybara_name" />
+
+    <ImageView
+        android:id="@+id/iv_player_stats_background"
+        style="@style/CapivaraTheme.BaseView"
+        android:layout_width="match_parent"
+        android:layout_height="86dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/player_stats_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_capybara_age" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_player_stats_background"
+        app:layout_constraintEnd_toEndOf="@+id/iv_player_stats_background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/iv_player_stats_background">
+
+        <LinearLayout
+            android:id="@+id/linear_layout_wins"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="32dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_player_wins"
+                style="@style/CapivaraTheme.BaseView"
+                android:text="9999"
+                android:textAlignment="textEnd"
+                android:textSize="32sp" />
+
+            <TextView
+                android:id="@+id/tv_player_wins_label"
+                style="@style/CapivaraTheme.BaseView"
+                android:layout_width="match_parent"
+                android:text="wins"
+                android:textAlignment="textEnd" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_layout_losses"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="32dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_player_losses"
+                style="@style/CapivaraTheme.BaseView"
+                android:text="9999"
+                android:textAlignment="textEnd"
+                android:textSize="32sp" />
+
+            <TextView
+                android:id="@+id/tv_player_losses_label"
+                style="@style/CapivaraTheme.BaseView"
+                android:layout_width="match_parent"
+                android:text="losses"
+                android:textAlignment="textEnd" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_layout_draws"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_player_draws"
+                style="@style/CapivaraTheme.BaseView"
+                android:text="9999"
+                android:textAlignment="textEnd"
+                android:textSize="32sp" />
+
+            <TextView
+                android:id="@+id/tv_player_draws_label"
+                style="@style/CapivaraTheme.BaseView"
+                android:layout_width="match_parent"
+                android:text="draws"
+                android:textAlignment="textEnd" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bt_fight"
+        style="@style/CapivaraTheme.ButtonActionOnHome"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/button_fight"
+        android:text="        FIGHT"
+        android:textAlignment="textStart"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_player_stats_background" />
+
+    <Button
+        android:id="@+id/bt_ranking"
+        style="@style/CapivaraTheme.ButtonActionOnHome"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/button_ranking"
+        android:text="       RANKING"
+        android:textAlignment="textStart"
+        android:textSize="42sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt_fight" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -54,6 +54,11 @@
         <item name="android:layout_height">40dp</item>
     </style>
 
+    <style name="CapivaraTheme.ButtonActionOnHome" parent="CapivaraTheme.BaseView">
+        <item name="android:background">@drawable/button_normal</item>
+        <item name="android:textColor">@color/colorBrown</item>
+    </style>
+
     <style name="CapivaraTheme.EditTextNormal" parent="CapivaraTheme.BaseView">
         <item name="android:textColor">@color/colorWhite</item>
         <item name="android:textColorHint">@color/colorWhite</item>

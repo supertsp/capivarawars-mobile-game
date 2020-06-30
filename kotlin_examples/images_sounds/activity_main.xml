@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Happy Pet"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textColor="#531515"
+        android:id="@+id/tv_titulo"
+         />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:src="@drawable/happy_sad_cat_01"
+        app:layout_constraintTop_toBottomOf="@+id/tv_titulo"
+        android:id="@+id/iv_cat"
+        android:onClick="onClick_restaurar"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="Agradar o bicho"
+        android:textSize="28sp"
+        android:textColor="#ffffff"
+        android:background="#531515"
+        android:onClick="onClick_agradar"
+        app:layout_constraintTop_toBottomOf="@+id/iv_cat"
+        android:id="@+id/bt_agradar_bicho"
+        />
+
+    <TextView
+        android:id="@+id/tv_agrado_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="16dp"
+        android:text="Faltam"
+        android:textAlignment="center"
+        android:textColor="#492424"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/tv_agrado"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt_agradar_bicho" />
+
+    <TextView
+        android:id="@+id/tv_agrado"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:text="7"
+        android:textAlignment="center"
+        android:textColor="#492424"
+        android:textSize="58sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/tv_agrado_right"
+        app:layout_constraintLeft_toRightOf="@+id/tv_agrado_left"
+        app:layout_constraintTop_toBottomOf="@+id/bt_agradar_bicho" />
+
+    <TextView
+        android:id="@+id/tv_agrado_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="32dp"
+        android:text=" agradinhos"
+        android:textAlignment="center"
+        android:textColor="#492424"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/tv_agrado"
+        app:layout_constraintTop_toBottomOf="@+id/bt_agradar_bicho" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

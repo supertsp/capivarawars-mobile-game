@@ -42,7 +42,7 @@
         style="@style/CapivaraTheme.ButtonNormal"
         android:layout_marginTop="8dp"
         android:background="@drawable/button_normal_google"
-        android:onClick="onClick_signin"
+        android:onClick="buttonLogin"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_signin" />
@@ -50,9 +50,9 @@
     <TextView
         android:id="@+id/tv_general_terms"
         style="@style/CapivaraTheme.TextViewLink"
-
         android:layout_marginBottom="16dp"
         android:text="General Terms"
+        android:onClick="buttonGeneralTerms"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

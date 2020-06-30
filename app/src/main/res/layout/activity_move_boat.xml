@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_river_boat"
+    tools:context=".ActivityMoveBoat">
+
+    <ImageView
+        android:id="@+id/iv_screen_title"
+        style="@style/CapivaraTheme.BaseView"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/screen_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_signin"
+        style="@style/CapivaraTheme.ScreenTitle"
+        android:layout_marginTop="28dp"
+        android:text="Move Your Boat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/iv_screen_title" />
+
+    <LinearLayout
+        android:id="@+id/linear_layout_boat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="6dp"
+        app:layout_constraintTop_toBottomOf="@+id/iv_screen_title">
+
+        <ImageView
+            android:id="@+id/iv_boat_piece_01"
+            style="@style/CapivaraTheme.BaseView"
+            android:src="@drawable/boat_piece_fill"
+            android:layout_marginLeft="28dp" />
+
+        <ImageView
+            android:id="@+id/iv_boat_piece_02"
+            style="@style/CapivaraTheme.BaseView"
+            android:src="@drawable/boat_piece_fill"
+            android:layout_marginLeft="48dp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

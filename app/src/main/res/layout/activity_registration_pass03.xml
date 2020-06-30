@@ -44,7 +44,7 @@
         app:layout_constraintTop_toBottomOf="@+id/et_capybara_name" />
 
     <ImageView
-        android:id="@+id/iv_capii_player"
+        android:id="@+id/iv_capybara_icon"
         style="@style/CapivaraTheme.BaseView"
         android:layout_width="128dp"
         android:layout_height="128dp"
@@ -64,7 +64,7 @@
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/iv_capii_player">
+        app:layout_constraintTop_toBottomOf="@+id/iv_capybara_icon">
 
         <Button
             android:id="@+id/bt_color_black"

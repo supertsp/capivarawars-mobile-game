@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "401444031226",
+    "firebase_url": "https://capivarawars-mobile.firebaseio.com",
+    "project_id": "capivarawars-mobile",
+    "storage_bucket": "capivarawars-mobile.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:401444031226:android:016b8b10a73adb6078d743",
+        "android_client_info": {
+          "package_name": "br.com.capivarawars.mobile"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "401444031226-pbhh3ltufsh6ft7ae66o2mbgv79e3732.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "br.com.capivarawars.mobile",
+            "certificate_hash": "0a3ac2df4cb1dc9c19ee69ac340657402ab674e3"
+          }
+        },
+        {
+          "client_id": "401444031226-m955htv85atm9j1l8vah3bskfc3ejcqn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDEzChG1xWtaB5Vzbz5K2bmvCCXoNqSIks"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "401444031226-m955htv85atm9j1l8vah3bskfc3ejcqn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

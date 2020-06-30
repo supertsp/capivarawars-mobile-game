@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.capivarawars">
+    package="br.com.capivarawars.mobile">
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -9,7 +11,10 @@
         android:roundIcon="@mipmap/ic_launcher_capivara_wars_round"
         android:supportsRtl="true"
         android:theme="@style/CapivaraTheme">
-        <activity android:name=".ActivityHome"></activity>
+        <activity android:name=".ActivityMoveBoat"></activity>
+        <activity android:name=".ActivityLogin" />
+        <activity android:name=".ActivityGeneralTerms" />
+        <activity android:name=".ActivityHome" />
         <activity android:name=".ActivityRegistrationPass03" />
         <activity android:name=".ActivityRegistrationPass02" />
         <activity android:name=".ActivityRegistrationPass01" />
