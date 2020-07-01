@@ -27,7 +27,7 @@
         app:layout_constraintTop_toTopOf="@+id/iv_screen_title" />
 
     <EditText
-        android:id="@+id/et_name"
+        android:id="@+id/et_nick"
         style="@style/CapivaraTheme.EditTextNormal"
         android:layout_marginTop="32dp"
         android:hint="Name"
@@ -44,7 +44,7 @@
         android:inputType="textEmailAddress"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/et_name" />
+        app:layout_constraintTop_toBottomOf="@+id/et_nick" />
 
     <EditText
         android:id="@+id/et_nick"
@@ -70,7 +70,7 @@
         style="@style/CapivaraTheme.ButtonBackNext"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
-        android:onClick="onClick_nextToPass02"
+        android:onClick="buttonNextStep"
         android:background="@drawable/button_next"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />

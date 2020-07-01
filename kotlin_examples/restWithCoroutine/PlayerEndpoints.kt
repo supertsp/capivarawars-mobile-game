@@ -1,6 +1,9 @@
 package br.com.capivarawars.mobile.rest
 
-import feign.*
+import feign.Body
+import feign.Headers
+import feign.Param
+import feign.RequestLine
 import java.time.LocalDate
 
 interface PlayerEndpoints {
@@ -9,7 +12,7 @@ interface PlayerEndpoints {
     @RequestLine("POST /api/v1/playerservice/login")
     @Headers("Content-Type: application/json")
     @Body("%7B\"nick\": \"{nick}\", \"password\": \"{password}\"%7D")
-    fun login(@Param("nick") nick: String, @Param("password") password: String): Response
+    fun login(@Param("nick") nick: String, @Param("password") password: String): String
 
     // LOGOUT
     @RequestLine("POST /api/v1/playerservice/logout/{idPlayer}")

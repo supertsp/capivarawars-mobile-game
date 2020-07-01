@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_river_turn_status"
+    tools:context=".ActivityWinner">
+
+    <TextView
+        android:id="@+id/tv_winner_announcement"
+        style="@style/CapivaraTheme.BaseView"
+        android:text="And the Winner of"
+        android:textSize="30sp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_logo"
+        style="@style/CapivaraTheme.BaseView"
+        android:layout_width="220dp"
+        android:layout_height="120dp"
+        android:src="@drawable/logo_capivara_wars_white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_winner_announcement" />
+
+    <TextView
+        android:id="@+id/tv_winner_announcement_continue"
+        style="@style/CapivaraTheme.BaseView"
+        android:text="is the player..."
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_logo" />
+
+    <ImageView
+        android:id="@+id/iv_icon_player"
+        style="@style/CapivaraTheme.BaseView"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/user_female_icon"
+        android:layout_marginTop="18dp"
+        android:layout_marginStart="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/iv_icon_capybara_winner"
+        app:layout_constraintTop_toBottomOf="@+id/tv_winner_announcement_continue" />
+
+    <ImageView
+        android:id="@+id/iv_capybara_icon"
+        style="@style/CapivaraTheme.BaseView"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:src="@drawable/capii_player_brown"
+        android:layout_marginTop="42dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_winner_announcement_continue" />
+
+    <TextView
+        android:id="@+id/tv_capybara_player_name"
+        style="@style/CapivaraTheme.BaseView"
+        android:layout_marginTop="2dp"
+        android:text="my capii"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_icon_capybara_winner" />
+
+    <ImageView
+        android:id="@+id/iv_winner_stats_background"
+        style="@style/CapivaraTheme.BaseView"
+        android:layout_width="match_parent"
+        android:layout_height="86dp"
+        android:src="@drawable/player_stats_background_yellow"
+        android:layout_marginTop="6dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_capybara_player_name" />
+
+    <TextView
+        android:id="@+id/tv_congratulations"
+        style="@style/CapivaraTheme.BaseView"
+        android:text="COngRAtuLAtionS !!!"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_winner_stats_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/iv_winner_stats_background" />
+
+    <Button
+        android:id="@+id/bt_next"
+        style="@style/CapivaraTheme.ButtonBackNext"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/button_next"
+        android:onClick="buttonFinishMatch"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

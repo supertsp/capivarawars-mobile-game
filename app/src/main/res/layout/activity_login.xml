@@ -27,7 +27,7 @@
         app:layout_constraintTop_toTopOf="@+id/iv_screen_title" />
 
     <EditText
-        android:id="@+id/et_name"
+        android:id="@+id/et_nick"
         style="@style/CapivaraTheme.EditTextNormal"
         android:layout_marginTop="32dp"
         android:hint="Nick"
@@ -43,13 +43,13 @@
         android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/et_name" />
+        app:layout_constraintTop_toBottomOf="@+id/et_nick" />
 
     <TextView
         android:id="@+id/tv_newtocapivara"
         style="@style/CapivaraTheme.BaseView"
-        android:text="New to Capivara Wars?"
         android:layout_marginTop="128dp"
+        android:text="New to Capivara Wars?"
         app:layout_constraintBottom_toTopOf="@+id/tv_create_account"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -65,13 +65,23 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_newtocapivara" />
 
+    <TextView
+        android:id="@+id/tv_login_error"
+        style="@style/CapivaraTheme.BaseView"
+        android:layout_marginTop="16dp"
+        android:text=""
+        android:textColor="#FF0000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_create_account" />
+
     <Button
         android:id="@+id/bt_back"
         style="@style/CapivaraTheme.ButtonBackNext"
         android:layout_marginStart="16dp"
         android:layout_marginBottom="16dp"
-        android:onClick="buttonBack"
         android:background="@drawable/button_back"
+        android:onClick="buttonBack"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -80,8 +90,8 @@
         style="@style/CapivaraTheme.ButtonBackNext"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
-        android:onClick="buttonLogin"
         android:background="@drawable/button_next"
+        android:onClick="buttonLogin"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 

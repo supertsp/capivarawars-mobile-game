@@ -20,7 +20,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/iv_user_icon"
+        android:id="@+id/iv_icon_player"
         style="@style/CapivaraTheme.BaseView"
         android:layout_width="72dp"
         android:layout_height="72dp"
@@ -30,12 +30,12 @@
         app:layout_constraintTop_toTopOf="@+id/iv_capybara_icon" />
 
     <TextView
-        android:id="@+id/tv_nick"
+        android:id="@+id/tv_nick_player"
         style="@style/CapivaraTheme.BaseView"
         android:text="superplayer78"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/iv_capybara_icon"
-        app:layout_constraintTop_toBottomOf="@+id/iv_user_icon" />
+        app:layout_constraintTop_toBottomOf="@+id/iv_icon_player" />
 
     <TextView
         android:id="@+id/tv_player_score"
@@ -66,6 +66,14 @@
         app:layout_constraintTop_toBottomOf="@+id/iv_capybara_icon">
 
         <ImageView
+            android:id="@+id/iv_life_square_00"
+            style="@style/CapivaraTheme.BaseView"
+            android:src="@drawable/life_square_fill"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/iv_capybara_icon"
+            app:layout_constraintTop_toTopOf="@+id/iv_capybara_icon" />
+
+        <ImageView
             android:id="@+id/iv_life_square_01"
             style="@style/CapivaraTheme.BaseView"
             android:src="@drawable/life_square_fill"
@@ -76,7 +84,7 @@
         <ImageView
             android:id="@+id/iv_life_square_02"
             style="@style/CapivaraTheme.BaseView"
-            android:src="@drawable/life_square_fill"
+            android:src="@drawable/life_square_empty"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/iv_capybara_icon"
             app:layout_constraintTop_toTopOf="@+id/iv_capybara_icon" />
@@ -107,14 +115,6 @@
 
         <ImageView
             android:id="@+id/iv_life_square_06"
-            style="@style/CapivaraTheme.BaseView"
-            android:src="@drawable/life_square_empty"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/iv_capybara_icon"
-            app:layout_constraintTop_toTopOf="@+id/iv_capybara_icon" />
-
-        <ImageView
-            android:id="@+id/iv_life_square_07"
             style="@style/CapivaraTheme.BaseView"
             android:src="@drawable/life_square_empty"
             app:layout_constraintEnd_toEndOf="parent"
@@ -178,7 +178,7 @@
             <TextView
                 android:id="@+id/tv_player_wins_label"
                 style="@style/CapivaraTheme.BaseView"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:text="wins"
                 android:textAlignment="textEnd" />
 
@@ -201,7 +201,7 @@
             <TextView
                 android:id="@+id/tv_player_losses_label"
                 style="@style/CapivaraTheme.BaseView"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:text="losses"
                 android:textAlignment="textEnd" />
 
@@ -223,7 +223,7 @@
             <TextView
                 android:id="@+id/tv_player_draws_label"
                 style="@style/CapivaraTheme.BaseView"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:text="draws"
                 android:textAlignment="textEnd" />
 
@@ -239,6 +239,7 @@
         android:text="        FIGHT"
         android:textAlignment="textStart"
         android:textSize="48sp"
+        android:onClick="buttonFight"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/iv_player_stats_background" />
@@ -251,6 +252,7 @@
         android:text="       RANKING"
         android:textAlignment="textStart"
         android:textSize="42sp"
+        android:onClick="buttonRanking"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/bt_fight" />

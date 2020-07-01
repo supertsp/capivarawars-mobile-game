@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bg_river_boat"
-    tools:context=".ActivityMoveBoat">
+    tools:context=".ActivityShotEnemy">
 
     <ImageView
         android:id="@+id/iv_bg_boat_area"
@@ -22,14 +22,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="86dp"
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
             android:id="@+id/iv_aim_part_00"
             style="@style/CapivaraTheme.BaseView"
-            android:layout_marginLeft="46dp"
-            android:src="@drawable/boat_piece_fill" />
+            android:src="@drawable/aim_fill"
+            android:layout_marginLeft="40dp" />
 
     </LinearLayout>
 
@@ -38,14 +38,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_marginTop="46dp"
+        android:layout_marginTop="48dp"
         app:layout_constraintTop_toTopOf="@+id/linear_layout_aim_00">
 
         <ImageView
             android:id="@+id/iv_aim_part_01"
             style="@style/CapivaraTheme.BaseView"
-            android:layout_marginLeft="73dp"
-            android:src="@drawable/boat_piece_fill" />
+            android:layout_marginLeft="70dp"
+            android:src="@drawable/aim_fill" />
     </LinearLayout>
 
     <LinearLayout
@@ -53,14 +53,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_marginTop="46dp"
+        android:layout_marginTop="44dp"
         app:layout_constraintTop_toTopOf="@+id/linear_layout_aim_01">
 
         <ImageView
             android:id="@+id/iv_aim_part_02"
             style="@style/CapivaraTheme.BaseView"
             android:layout_marginLeft="100dp"
-            android:src="@drawable/boat_piece_fill" />
+            android:src="@drawable/aim_fill" />
     </LinearLayout>
 
     <LinearLayout
@@ -68,14 +68,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_marginTop="46dp"
+        android:layout_marginTop="42dp"
         app:layout_constraintTop_toTopOf="@+id/linear_layout_aim_02">
 
         <ImageView
             android:id="@+id/iv_aim_part_03"
             style="@style/CapivaraTheme.BaseView"
             android:layout_marginLeft="126dp"
-            android:src="@drawable/boat_piece_fill" />
+            android:src="@drawable/aim_fill" />
     </LinearLayout>
 
     <LinearLayout
@@ -83,14 +83,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="42dp"
         app:layout_constraintTop_toTopOf="@+id/linear_layout_aim_03">
 
         <ImageView
             android:id="@+id/iv_aim_part_04"
             style="@style/CapivaraTheme.BaseView"
-            android:layout_marginLeft="152dp"
-            android:src="@drawable/boat_piece_fill" />
+            android:layout_marginLeft="150dp"
+            android:src="@drawable/aim_fill" />
     </LinearLayout>
 
     <LinearLayout
@@ -98,14 +98,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_marginTop="42dp"
+        android:layout_marginTop="46dp"
         app:layout_constraintTop_toTopOf="@+id/linear_layout_aim_04">
 
         <ImageView
             android:id="@+id/iv_aim_part_05"
             style="@style/CapivaraTheme.BaseView"
-            android:layout_marginLeft="176dp"
-            android:src="@drawable/boat_piece_fill" />
+            android:layout_marginLeft="174dp"
+            android:src="@drawable/aim_fill" />
     </LinearLayout>
 
     <LinearLayout
@@ -113,14 +113,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="46dp"
         app:layout_constraintTop_toTopOf="@+id/linear_layout_aim_05">
 
         <ImageView
             android:id="@+id/iv_aim_part_06"
             style="@style/CapivaraTheme.BaseView"
-            android:layout_marginLeft="202dp"
-            android:src="@drawable/boat_piece_fill" />
+            android:layout_marginLeft="200dp"
+            android:src="@drawable/aim_fill" />
     </LinearLayout>
 
     <LinearLayout
@@ -128,14 +128,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_marginTop="46dp"
+        android:layout_marginTop="44dp"
         app:layout_constraintTop_toTopOf="@+id/linear_layout_aim_06">
 
         <ImageView
             android:id="@+id/iv_aim_part_07"
             style="@style/CapivaraTheme.BaseView"
             android:layout_marginLeft="228dp"
-            android:src="@drawable/boat_piece_fill" />
+            android:src="@drawable/aim_fill" />
     </LinearLayout>
 
     <LinearLayout
@@ -150,7 +150,7 @@
             android:id="@+id/iv_aim_part_08"
             style="@style/CapivaraTheme.BaseView"
             android:layout_marginLeft="254dp"
-            android:src="@drawable/boat_piece_fill" />
+            android:src="@drawable/aim_fill" />
     </LinearLayout>
 
     <LinearLayout
@@ -165,7 +165,7 @@
             android:id="@+id/iv_aim_part_09"
             style="@style/CapivaraTheme.BaseView"
             android:layout_marginLeft="280dp"
-            android:src="@drawable/boat_piece_fill" />
+            android:src="@drawable/aim_fill" />
     </LinearLayout>
 
     <ImageView
@@ -181,7 +181,7 @@
         android:id="@+id/tv_signin"
         style="@style/CapivaraTheme.ScreenTitle"
         android:layout_marginTop="28dp"
-        android:text="Move Your Boat"
+        android:text="SHOT YOUR ENEMY"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/iv_screen_title" />
@@ -192,33 +192,30 @@
         style="@style/CapivaraTheme.BaseView"
         android:layout_width="98dp"
         android:layout_height="98dp"
-        android:layout_marginStart="16dp"
         android:src="@drawable/capii_player_brown"
-        app:layout_constraintBottom_toTopOf="@+id/tv_capybara_name"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_screen_title" />
 
     <TextView
         android:id="@+id/tv_capybara_name"
         style="@style/CapivaraTheme.BaseView"
-        android:text="supertsp"
-        android:layout_marginStart="20dp"
-        android:layout_marginBottom="36dp"
-        app:layout_constraintEnd_toEndOf="@+id/et_capybara_name"
-        app:layout_constraintBottom_toTopOf="@+id/bt_login"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:text="enemy"
+        android:layout_marginRight="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_icon_capybara_winner" />
 
     <Button
         android:id="@+id/bt_login"
         style="@style/CapivaraTheme.ButtonNormal"
         android:layout_marginStart="16dp"
         android:layout_marginBottom="16dp"
-        android:text="MOVE"
+        android:text="SHOT"
         android:textSize="42dp"
-        android:onClick="buttonMove"
+        android:onClick="buttonShotEnemy"
         android:background="@drawable/button_normal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
-
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

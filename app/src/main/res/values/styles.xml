@@ -30,6 +30,13 @@
         <item name="fontFamily">@font/cloudy</item>
     </style>
 
+    <style name="CapivaraTheme.ScreenTitleLight" parent="CapivaraTheme.BaseView">
+        <item name="android:textSize">28sp</item>
+        <item name="android:textColor">@color/colorTitleLight</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="fontFamily">@font/cloudy</item>
+    </style>
+
     <style name="CapivaraTheme.TextViewLink" parent="CapivaraTheme.BaseView">
         <item name="android:textColor">@color/colorActivated</item>
         <item name="android:background">@drawable/custom_textview</item>

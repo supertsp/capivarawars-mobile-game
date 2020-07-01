@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_river_turn_status"
+    tools:context=".ActivityTurnStatus">
+
+    <ImageView
+        android:id="@+id/iv_screen_title"
+        style="@style/CapivaraTheme.BaseView"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/screen_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_winner_announcement"
+        style="@style/CapivaraTheme.ScreenTitleLight"
+        android:layout_marginTop="28dp"
+        android:text="TURN STATUS"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/iv_screen_title" />
+
+    <ImageView
+        android:id="@+id/iv_player_stats_background_big"
+        style="@style/CapivaraTheme.BaseView"
+        android:src="@drawable/player_stats_background_big"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_screen_title" />
+
+    <ImageView
+        android:id="@+id/iv_icon_player"
+        style="@style/CapivaraTheme.BaseView"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:src="@drawable/user_female_icon"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toEndOf="@+id/iv_player_stats_background_big"
+        app:layout_constraintTop_toTopOf="@+id/iv_player_stats_background_big" />
+
+    <TextView
+        android:id="@+id/tv_nick_player"
+        style="@style/CapivaraTheme.BaseView"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="12dp"
+        android:text="superplayer78"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_icon_player"
+        app:layout_constraintEnd_toStartOf="@+id/iv_icon_player" />
+
+    <ImageView
+        android:id="@+id/iv_capybara_icon"
+        style="@style/CapivaraTheme.BaseView"
+        android:layout_width="98dp"
+        android:layout_height="98dp"
+        android:src="@drawable/capii_player_brown"
+        android:layout_marginStart="24dp"
+        app:layout_constraintStart_toStartOf="@+id/iv_player_stats_background_big"
+        app:layout_constraintTop_toBottomOf="@+id/iv_icon_player" />
+
+    <TextView
+        android:id="@+id/tv_capybara_player_name"
+        style="@style/CapivaraTheme.BaseView"
+        android:text="my capii"
+        android:layout_marginTop="2dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintStart_toStartOf="@+id/iv_icon_capybara_winner"
+        app:layout_constraintTop_toBottomOf="@+id/iv_icon_capybara_winner" />
+
+    <LinearLayout
+        android:id="@+id/linear_layout_boat_parts_player"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toEndOf="@+id/iv_icon_capybara_winner"
+        app:layout_constraintTop_toTopOf="@+id/iv_icon_capybara_winner">
+
+        <ImageView
+            android:id="@+id/iv_boat_player_part_00"
+            style="@style/CapivaraTheme.BaseView"
+            android:src="@drawable/boat_stats_piece_fill" />
+
+        <ImageView
+            android:id="@+id/iv_boat_player_part_01"
+            style="@style/CapivaraTheme.BaseView"
+            android:src="@drawable/boat_stats_piece_fill" />
+
+        <ImageView
+            android:id="@+id/iv_boat_player_part_02"
+            style="@style/CapivaraTheme.BaseView"
+            android:src="@drawable/boat_stats_piece_fill" />
+
+        <ImageView
+            android:id="@+id/iv_boat_player_part_03"
+            style="@style/CapivaraTheme.BaseView"
+            android:src="@drawable/boat_stats_piece_fill" />
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/iv_icon_capybara_enemy"
+        style="@style/CapivaraTheme.BaseView"
+        android:layout_width="98dp"
+        android:layout_height="98dp"
+        android:layout_marginTop="70dp"
+        android:src="@drawable/capii_player_black"
+        app:layout_constraintBottom_toTopOf="@+id/tv_capybara_enemy_name"
+        app:layout_constraintStart_toStartOf="@+id/iv_icon_capybara_winner"
+        app:layout_constraintTop_toBottomOf="@+id/tv_capybara_player_name" />
+
+    <TextView
+        android:id="@+id/tv_capybara_enemy_name"
+        style="@style/CapivaraTheme.BaseView"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="32dp"
+        android:text="Luana"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_player_stats_background_big"
+        app:layout_constraintStart_toStartOf="@+id/iv_icon_capybara_enemy"
+        app:layout_constraintTop_toBottomOf="@+id/iv_icon_capybara_enemy" />
+
+    <LinearLayout
+        android:id="@+id/linear_layout_boat_parts_enemy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toEndOf="@+id/iv_icon_capybara_enemy"
+        app:layout_constraintTop_toTopOf="@+id/iv_icon_capybara_enemy">
+
+        <ImageView
+            android:id="@+id/iv_boat_enemy_part_00"
+            style="@style/CapivaraTheme.BaseView"
+            android:src="@drawable/boat_stats_piece_fill" />
+
+        <ImageView
+            android:id="@+id/iv_boat_enemy_part_01"
+            style="@style/CapivaraTheme.BaseView"
+            android:src="@drawable/boat_stats_piece_fill" />
+
+        <ImageView
+            android:id="@+id/iv_boat_enemy_part_02"
+            style="@style/CapivaraTheme.BaseView"
+            android:src="@drawable/boat_stats_piece_fill" />
+
+        <ImageView
+            android:id="@+id/iv_boat_enemy_part_03"
+            style="@style/CapivaraTheme.BaseView"
+            android:src="@drawable/boat_stats_piece_fill" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_icon_enemy"
+        style="@style/CapivaraTheme.BaseView"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:layout_marginEnd="32dp"
+        android:src="@drawable/user_enemy_icon"
+        app:layout_constraintBottom_toTopOf="@+id/iv_icon_capybara_enemy"
+        app:layout_constraintEnd_toEndOf="@+id/iv_player_stats_background_big" />
+
+    <TextView
+        android:id="@+id/tv_nick_enemy"
+        style="@style/CapivaraTheme.BaseView"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="12dp"
+        android:text="ImBad"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_icon_enemy"
+        app:layout_constraintEnd_toStartOf="@+id/iv_icon_enemy" />
+
+    <Button
+        android:id="@+id/bt_next"
+        style="@style/CapivaraTheme.ButtonBackNext"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/button_next"
+        android:onClick="buttonContinueTurn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -7,4 +7,5 @@
     <color name="colorBrown">#552200</color>
     <color name="colorActivated">#FF6600</color>
     <color name="colorTitle">#2A3205</color>
+    <color name="colorTitleLight">#F2FFB8</color>
 </resources>
